@@ -1,13 +1,13 @@
-%% ½ø»¯Äæ×ªº¯Êý
-%ÊäÈë
-%SelCh ±»Ñ¡ÔñµÄ¸öÌå
-%D     ¸ö³ÇÊÐµÄ¾àÀë¾ØÕó
-%Êä³ö
-%SelCh  ½ø»¯Äæ×ªºóµÄ¸öÌå
+%% ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
+%ï¿½ï¿½ï¿½ï¿½
+%SelCh ï¿½ï¿½Ñ¡ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
+%D     ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+%ï¿½ï¿½ï¿½
+%SelCh  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
 function SelCh=Reverse(SelCh)
 [row,col]=size(SelCh);
 for i=1:row
-    ObjV(i,1)=PathLength(SelCh(i,:));  %¼ÆËãÂ·¾¶³¤¶È
+    ObjV(i,1)=PathLength(SelCh(i,:));  %ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 end
 SelCh1=SelCh;
 for i=1:row
@@ -18,7 +18,7 @@ for i=1:row
     SelCh1(i,mininverse:maxinverse)=SelCh1(i,maxinverse:-1:mininverse);
 end
 for i=1:row
-    ObjV1(i,1)=PathLength(SelCh1(i,:));  %¼ÆËãÂ·¾¶³¤¶È
+    ObjV1(i,1)=PathLength(SelCh1(i,:));  %ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 end
 index=ObjV1<ObjV;
 SelCh(index,:)=SelCh1(index,:);

@@ -1,8 +1,8 @@
-% 输入:
-%FitnV  个体的适应度值
-%Nsel   被选择个体的数目
-% 输出:
-%NewChrIx  被选择个体的索引号
+% ??:
+%FitnV  ???????
+%Nsel   ????????
+% ??:
+%NewChrIx  ?????????
 function NewChrIx = Sus(FitnV,Nsel)
 
 % Identify the population size (Nind)
@@ -21,7 +21,3 @@ function NewChrIx = Sus(FitnV,Nsel)
 
 
 % End of function
-
-
-
-

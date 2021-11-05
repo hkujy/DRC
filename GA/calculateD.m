@@ -1,6 +1,6 @@
 function [D] = calculateD(C)
-%UNTITLED2 此处显示有关此函数的摘要
-%   此处显示详细说明
+%UNTITLED2 ????????????
+%   ????????
 [n,column]=size(C);
 D=zeros(n,n);
 for i=1:n
@@ -12,4 +12,3 @@ for i=1:n
     end
 end
 end
-
